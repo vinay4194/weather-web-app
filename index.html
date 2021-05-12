@@ -1,0 +1,105 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="cloudy.png" type="image/icon type" />
+		<title>Weather App</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<!-- new content -->
+			<i class="fas fa-bars swapIcons"></i>
+			<div class="search-cities">
+				<input type="text" class="search-box" id="search-box" placeholder="Search a city" /><i class="fas fa-search"></i>
+				<p class="error-msg"></p>
+
+				<div class="suggested-cities">
+
+					<div class="cities">
+						<h3 class="cityTitle">Noida</h3>
+						<i class="fas fa-times-circle"></i>
+					</div>
+					<div class="cities">
+						<h3 class="cityTitle">Delhi</h3>
+						<i class="fas fa-times-circle"></i>
+					</div>
+					<div class="cities">
+						<h3 class="cityTitle">Bengaluru</h3>
+						<i class="fas fa-times-circle"></i>
+					</div>
+					<div class="cities">
+						<h3 class="cityTitle">Kolkata</h3>
+						<i class="fas fa-times-circle"></i>
+					</div>
+					<div class="cities">
+						<h3 class="cityTitle">Singapore</h3>
+						<i class="fas fa-times-circle"></i>
+					</div>
+					<div class="cities">
+						<h3 class="cityTitle">Paris</h3>
+						<i class="fas fa-times-circle"></i>
+					</div>
+
+					<div class="cities">
+						<h3 class="cityTitle">London</h3>
+						<i class="fas fa-times-circle"></i>
+					</div>
+					<div class="cities">
+						<h3 class="cityTitle">Toronto</h3>
+						<i class="fas fa-times-circle"></i>
+					</div>
+
+				</div>
+			</div>
+			<!-- new content -->
+			<div class="weathercon">
+				<i class="scale fas fa-sun"></i>
+			</div>
+			<h3 id="wc-status"></h3>
+
+			<div class="wave wave-one"></div>
+			<div class="wave wave-two"></div>
+			<div class="wave wave-three"></div>
+
+			<div class="info">
+				<i class="fas fa-map-marker-alt"></i>
+				<h2 class="location">Greater Noida</h2>
+				<p id="date"></p>
+				<h1 class="temp"></h1>
+				<h3 class="temp-min-max"></h3>
+			</div>
+			<!-- new content -->
+			<i class="fas fa-chevron-up changeIcon"></i>
+			<div class="more-info">
+
+				<div class="more-info-items">
+					<div class="content"><h3>Place</h3><p id="place">
+						</p></div>
+					<div class="content"><h3>Temp.</h3><p id="temp">
+						</p></div>
+					<div class="content"><h3>Conditions</h3><p id="w-conditions"> </p></div>
+					<div class="content"><h3>Feels like</h3><p id="feels-like"> </p></div>
+					<div class="content"><h3>Pressure</h3><p id="pressure">
+							hPa</p></div>
+					<div class="content"><h3>Humidity</h3><p id="humidity"> </p></div>
+					<div class="content"><h3>Visibility</h3><p id="visibility"> </p></div>
+					<div class="content"><h3>Wind Speed</h3><p id="wind-speed"> </p></div>
+				</div>
+
+			</div>
+			<!-- new content -->
+		</div>
+
+		<script src="app.js"></script>
+
+		
+	</body>
+</html>
